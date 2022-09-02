@@ -4,6 +4,136 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#2D2D2D"
     tools:context=".ExerciseLoggingActivity">
+
+    <Spinner
+        android:id="@+id/spExercise"
+        style="@android:style/Widget.DeviceDefault.Spinner"
+        android:layout_width="258dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#675D5D"
+        app:layout_constraintBottom_toTopOf="@+id/textView5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="334dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/fira_mono"
+        android:gravity="center"
+        android:text="Please choose the current muscle area you are working on"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spArea"
+        style="@android:style/Widget.DeviceDefault.Spinner"
+        android:layout_width="258dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#675D5D"
+        android:foregroundTint="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="327dp"
+        android:layout_height="42dp"
+        android:fontFamily="@font/fira_mono"
+        android:gravity="center"
+        android:text="And the current exercise"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.261" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="327dp"
+        android:layout_height="42dp"
+        android:fontFamily="@font/fira_mono"
+        android:gravity="center"
+        android:text="Some stats..."
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.589" />
+
+    <EditText
+        android:id="@+id/etSets"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:hint="sets"
+        android:inputType="number"
+        android:textColorHint="#4D4D4D"
+        app:layout_constraintEnd_toEndOf="@+id/etWeight"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <EditText
+        android:id="@+id/etWeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="184dp"
+        android:ems="10"
+        android:hint="weight (kg)"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        android:textColorHint="#4D4D4D"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etSets"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/etReps"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="48dp"
+        android:ems="10"
+        android:hint="reps"
+        android:inputType="number"
+        android:textColorHint="#4D4D4D"
+        app:layout_constraintBottom_toBottomOf="@+id/etSets"
+        app:layout_constraintEnd_toStartOf="@+id/etSets"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/etWeight"
+        app:layout_constraintTop_toTopOf="@+id/etSets"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btLogExercise"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#986868"
+        android:text="Log Exercise"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etWeight" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

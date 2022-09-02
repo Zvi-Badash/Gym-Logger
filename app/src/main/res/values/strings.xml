@@ -1,3 +1,44 @@
 <resources>
     <string name="app_name">Gym Logger</string>
+
+    <string-array name="body_parts_array">
+        <item>Legs</item>
+        <item>Back</item>
+        <item>Chest</item>
+        <item>Shoulders</item>
+        <item>Arms</item>
+    </string-array>
+
+    <string-array name="non_chosen_array">
+        <item>Please choose a muscle area to train</item>
+    </string-array>
+
+    <string-array name="leg_exercises_array">
+        <item>Leg Press</item>
+        <item>Leg Extensions</item>
+        <item>Lying leg curls</item>
+    </string-array>
+
+    <string-array name="back_exercises_array">
+        <item>Lat pulldowns</item>
+        <item>Seated rows</item>
+    </string-array>
+
+    <string-array name="chest_exercises_array">
+        <item>Bench press (bar, lying)</item>
+        <item>Seated pec fly</item>
+    </string-array>
+
+    <string-array name="shoulder_exercises_array">
+        <item>Shoulder press (free weights)</item>
+        <item>Shoulder press (bar weights)</item>
+    </string-array>
+
+    <string-array name="arms_exercises_array">
+        <item>Bicep curls (pulley)</item>
+        <item>Bicep curls (bar)</item>
+        <item>Bicep curls (free weights)</item>
+        <item>Triceps pushdowns (pulley, facing the bar)</item>
+        <item>Triceps pushdowns (pulley, back to the bar)</item>
+]    </string-array>
 </resources>

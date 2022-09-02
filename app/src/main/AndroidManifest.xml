@@ -17,9 +17,6 @@
             android:name=".ExerciseLoggingActivity"
             android:exported="false" />
         <activity
-            android:name=".ExercisesListActivity"
-            android:exported="false" />
-        <activity
             android:name=".WelcomeActivity"
             android:exported="true">
             <intent-filter>

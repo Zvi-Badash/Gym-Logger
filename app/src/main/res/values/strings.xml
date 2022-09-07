@@ -21,11 +21,14 @@
 
     <string-array name="back_exercises_array">
         <item>Lat pulldowns</item>
+        <item>Lat raises</item>
         <item>Seated rows</item>
+        <item>Rear deltoid fly</item>
     </string-array>
 
     <string-array name="chest_exercises_array">
-        <item>Bench press (bar, lying)</item>
+        <item>Bench press (bar)</item>
+        <item>Bench press (free weights)</item>
         <item>Seated pec fly</item>
     </string-array>
 
@@ -38,6 +41,7 @@
         <item>Bicep curls (pulley)</item>
         <item>Bicep curls (bar)</item>
         <item>Bicep curls (free weights)</item>
+        <item>Seated dip tricep press</item>
         <item>Triceps pushdowns (pulley, facing the bar)</item>
         <item>Triceps pushdowns (pulley, back to the bar)</item>
 ]    </string-array>

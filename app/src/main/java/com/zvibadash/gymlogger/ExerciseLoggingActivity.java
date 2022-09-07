@@ -19,6 +19,7 @@ public class ExerciseLoggingActivity extends AppCompatActivity {
     EditText etReps, etSets, etWeight;
 
     String exercise;
+    String muscleArea;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -82,6 +83,8 @@ public class ExerciseLoggingActivity extends AppCompatActivity {
                 }
                 adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
                 spExercise.setAdapter(adapter);
+
+                muscleArea = adapterView.getSelectedItem().toString();
             }
 
             @Override
@@ -112,7 +115,12 @@ public class ExerciseLoggingActivity extends AppCompatActivity {
             int reps = (!etReps.getText().toString().equals("")) ? Integer.parseInt(etReps.getText().toString()) : -1;
             int sets = (!etSets.getText().toString().equals("")) ? Integer.parseInt(etSets.getText().toString()) : -1;
 
-            (new DataLogger(getApplicationContext())).logExerciseData(exercise, weight, reps, sets);
+            (new DataLogger(getApplicationContext()))
+                    .logExerciseData(
+                            muscleArea.replace(' ', '-'),
+                            exercise.replace(' ', '-'),
+                            weight, reps, sets
+                    );
 
             Toast.makeText(this, "Nice work on the " + exercise + "!", Toast.LENGTH_SHORT).show();
         });

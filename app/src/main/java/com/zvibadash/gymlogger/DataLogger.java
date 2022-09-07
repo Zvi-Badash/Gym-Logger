@@ -11,7 +11,7 @@ import java.util.Locale;
 
 public class DataLogger {
     private final File dataFile;
-    private final String dateFormat = "dd-MM-yyyy HH:mm:ss";
+    private final String dateFormat = "dd-MM-yyyy'@'HH:mm:ss";
 
     public DataLogger(Context context) {
         this.dataFile = new File(context.getFilesDir(), "gym-raw-data.txt");
@@ -37,10 +37,12 @@ public class DataLogger {
 
         logData(sb);
     }
-    public void logExerciseData(String exercise, float weight, int reps, int sets) {
+    public void logExerciseData(String muscleArea, String exercise, float weight, int reps, int sets) {
         StringBuilder sb = new StringBuilder();
         sb.append("[*] ");
         sb.append(new SimpleDateFormat(dateFormat, Locale.getDefault()).format(new Date()));
+        sb.append(",");
+        sb.append(muscleArea);
         sb.append(",");
         sb.append(exercise);
         sb.append(",");
